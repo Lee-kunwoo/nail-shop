@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Lee-kunwoo/nail-shop.git/static/css/main.35476d5c.css",
+    "main.js": "/Lee-kunwoo/nail-shop.git/static/js/main.aab95093.js",
+    "index.html": "/Lee-kunwoo/nail-shop.git/index.html",
+    "main.35476d5c.css.map": "/Lee-kunwoo/nail-shop.git/static/css/main.35476d5c.css.map",
+    "main.aab95093.js.map": "/Lee-kunwoo/nail-shop.git/static/js/main.aab95093.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35476d5c.css",
+    "static/js/main.aab95093.js"
+  ]
+}
