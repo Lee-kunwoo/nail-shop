@@ -1,0 +1,168 @@
+.sp1-sec1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60rem;
+  padding: 3rem;
+}
+
+> div {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #FF4081;
+}
+
+.sp1-sec1-img-Box-bg {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 1230px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.sp1-sec1-img-Box {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+
+  > li {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:not(:last-child) {
+      margin-right: 6rem;
+    }
+  }
+}
+
+/* Background 이미지 클래스 */
+.sp1-mainImg1 {
+  background-image: url(https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images_nail/nail_01.png);
+}
+.sp1-mainImg2 {
+  background-image: url(https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images_nail/nail_02.png);
+}
+.sp1-mainImg3 {
+  background-image: url(https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images_nail/nail_03.jpg);
+}
+.sp1-mainImg4 {
+  background-image: url(https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images_nail/nail_04.jpg);
+}
+.sp1-mainImg5 {
+  background-image: url(https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images_nail/nail_05.jpg);
+}
+.sp1-mainImg6 {
+  background-image: url(https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images_nail/nail_06.webp);
+}
+.sp1-mainImg7 {
+  background-image: url(https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images_nail/nail_07.jpg);
+}
+.sp1-mainImg8 {
+  background-image: url(https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images_nail/nail_08.jpg);
+}
+.sp1-mainImg9 {
+  background-image: url(https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images_nail/nail_09.jpg);
+}
+.sp1-mainImg10 {
+  background-image: url(https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images_nail/nail_10.jpg);
+}
+.sp1-mainImg11 {
+  background-image: url(https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images_nail/nail_11.jpg);
+}
+.sp1-mainImg12 {
+  background-image: url(https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images_nail/nail_12.jpg);
+}
+
+.sp-slide-left,
+.sp-slide-right {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  top: 45%;
+}
+
+.sp-slide-left {
+  top: 50%;
+  left: 55px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: url("https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images/arrow_left.png")
+    no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+}
+.sp-slide-right {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: url("https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images/arrow_right.png")
+    no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .sp1-sec1 {
+    height: 50rem;
+    padding: 3rem;
+    > div {
+      font-size: 2.8rem;
+    }
+  }
+  .sp1-sec1-img-Box-bg {
+    width: 100%;
+    height: 400px;
+  }
+  .sp1-sec1-img-Box > li {
+    width: 30rem;
+    height: 25rem;
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .sp1-sec1 {
+    height: 35rem;
+    > div {
+      font-size: 2rem;
+      color: #FF4081;
+    }
+  }
+  .sp1-sec1-img-Box-bg {
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+  }
+  .sp1-sec1-img-Box > li {
+    width: 40rem;
+    height: 20rem;
+  }
+  .sp-slide-left {
+    top: 50%;
+    left: 5px;
+  }
+  .sp-slide-right {
+    top: 50%;
+    right: 0;
+  }
+}

@@ -1,0 +1,120 @@
+.page {
+        width: 100vw;
+        height: 100vh;       
+        background-color: rgb(80, 76, 133);
+        margin-bottom: 0;
+      
+        h1 {
+          text-align: center;
+          font-size: 50px;
+          font-weight: bold;
+          margin: 0;
+          padding-top: 20px;
+          color: white;
+        }
+      
+        .outBox {
+          margin: 50px auto;
+          width: 350px;
+          height: 450px;
+          display: flex;
+          justify-content: center; // 가운데 정렬
+          align-items: center;
+          gap: 30px;
+      
+          .inBox {
+            text-align: center;
+            background-color: white;
+            border-radius: 5px;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+      
+            img {
+              max-width: 200px;
+              height: 300px;
+              background: no-repeat center center;
+              background-size: cover;
+              background: cover;
+              padding: 20px;
+            }
+          }
+        }
+      }
+      
+      /* Tablet (max-width: 1024px) */
+      @media (max-width: 1024px) {
+        .page {
+          h1 {
+            font-size: 40px;
+            padding-top: 15px;
+          }
+      
+          .outBox {
+            margin: 40px auto;
+            width: 300px;
+            height: 400px;
+            gap: 20px;
+            display: flex;
+            justify-content: center; // 가운데 정렬
+            align-items: center;
+      
+            .inBox {
+              width: 250px;
+              height: 350px;
+              padding: 10px;
+      
+              img {
+                max-width: 150px;
+                height: 250px;
+              }
+              img:hover {
+                width: 250px;
+                height: 350px;
+              }
+            }
+          }
+        }
+      }
+      
+     /* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .page {
+    width: 100%;
+    height: 100%;
+    h1 {
+      font-size: 30px;
+      padding-top: 10px;     
+    }    
+    .outBox {
+      margin: 30px auto;
+      width: 90%;           // 화면 폭에 맞게 90% 사용
+      max-width: 260px;     // 최대 폭 제한
+      height: auto;         // 내용에 따라 높이 조절
+      gap: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;      
+      .inBox {
+        width: 100%;         // 부모 폭에 맞게 채움
+        max-width: 220px;    // 최대 폭 제한
+        height: auto;        // 내용에 따라 높이 조절
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+          max-width: 100%;    // 부모 폭에 맞게 이미지 크기 조절
+          height: auto;
+          transition: transform 0.3s ease-in-out;
+        }        
+      }
+    }
+  }
+}

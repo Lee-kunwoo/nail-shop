@@ -1,0 +1,173 @@
+    /* 카드 컨텐츠 */
+    /* 스크롤 시점 태그 (필요시 사용) */
+    #spacer {
+    height: 2950px; /* 탑메뉴에서 #our_brand까지의 높이 */
+    background: #1e1e33;
+    }
+
+    /* OUR BRAND 영역 */
+    #our_brand {
+    width: 100%;
+    height: 600px;
+    margin-top: 0;
+    background: #1e1e33;
+    color: #FF4081;
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 300px;
+    }
+
+    #our_brand section h2 {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    font-size: 4.5rem;
+    line-height: 130%;
+    text-align: left;
+    }
+
+    /* 카드들을 감싸는 컨테이너 */
+    #our_brand > section > div {
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between; /* 카드 간 간격 유지 */
+    align-items: flex-start; /* 상단 정렬 */
+    margin: 0 auto; /* 중앙 정렬 */
+    }
+
+    /* 개별 카드 */
+    #our_brand > section > div section {
+    flex: 1;
+    background: #FF4081;
+    position: relative;
+    border-radius: 15px;
+    padding: 50px 30px 50px;
+    margin: 20px; /* 카드 간격 */
+    text-align: center;
+    transition: transform 0.3s;
+    border: 1px solid black;
+    }
+
+    #our_brand > section > div section:hover {
+    position: relative;
+    transform: scale(1.05); /* 호버 시 확대 효과 */
+    }
+
+    /* active 클래스: 카드 영역 애니메이션 */
+    #our_brand > section > div.active section {
+    animation: roll 1s both;
+    }
+    #our_brand > section > div.active section:nth-child(2) {
+    animation-delay: 0.5s;
+    }
+    #our_brand > section > div.active section:nth-child(3) {
+    animation-delay: 1s;
+    }
+
+    @keyframes roll {
+    from {
+    transform: rotateY(0);
+    }
+    to {
+    transform: rotateY(360deg);
+    }
+    }
+
+    /* 카드 이미지 */
+    #our_brand > section > div img {
+    display: block;
+    position:relative;
+    width: 300px;
+    height: auto;
+    margin: 0 auto 30px;
+    transition: transform 1s; 
+    border-radius: 10px;   
+    }
+
+    #our_brand > section > div.active section img {
+    animation: updown 1s both infinite alternate;
+    }
+    #our_brand > section > div.active section:nth-child(2) img {
+    animation-delay: 0.5s;
+    }
+    #our_brand > section > div.active section:nth-child(3) img {
+    animation-delay: 1s;
+    }
+
+    @keyframes updown {
+    from {
+    transform: translateY(-10px);
+    opacity: 0.5;
+    }
+    to {
+    transform: translateY(10px);
+    opacity: 1;
+    }
+    }
+
+    /* 카드 제목 */
+    #our_brand h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+    }
+
+    /* Tablet (max-width: 1024px) */
+    @media (max-width: 1024px) {
+    #our_brand {
+    height: auto;
+    padding: 80px 0;
+    margin-bottom: 200px;
+    }
+    #our_brand section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    }
+    #our_brand > section > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    #our_brand > section > div section {
+    padding: 80px 20px 30px;
+    margin: 10px;
+    }
+    #our_brand h3 {
+    font-size: 2rem;
+    }
+    #our_brand > section > div img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    }
+    }
+
+    /* Mobile (max-width: 768px) */
+    @media (max-width: 768px) {
+    #our_brand {
+    height: auto;
+    padding: 60px 0;
+    margin-bottom: 150px;
+    }
+    #our_brand section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    }
+    #our_brand > section > div {
+    flex-direction: column;
+    align-items: center;
+    }
+    #our_brand > section > div section {
+    width: 90%;
+    padding: 60px 15px 20px;
+    margin: 10px 0;
+    }
+    #our_brand h3 {
+    font-size: 1.8rem;
+    }
+    #our_brand > section > div img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    }
+    }

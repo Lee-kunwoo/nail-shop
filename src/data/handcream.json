@@ -1,0 +1,6 @@
+[
+    {"id" : 1, "name": "HENNA", "price": 3100, "img" :"https://raw.githubusercontent.com/Lee-kunwoo/nailart/refs/heads/main/images/cuticle.png"},
+    {"id" : 2, "name": "선샤인큐티클오일", "price": 10000, "img" :"https://sunnailart.com/web/product/big/201412/6008_shop1_551235.jpg"},
+    {"id" : 3, "name": "셀리 큐티클 오일", "price": 38900, "img" :"https://img.croket.co.kr/item/thumbnail/eed0818040f141d8128b8e5fe9c0036b.webp"},
+    {"id" : 4, "name": "카렌큐티클오일", "price": 30000, "img" :"https://sitem.ssgcdn.com/26/67/51/item/1000055516726_i1_1200.jpg"}    
+]

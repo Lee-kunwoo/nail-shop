@@ -1,0 +1,85 @@
+    /* Footer 스타일 */
+    footer {
+    width: 100%;
+    height: 400px;
+    margin-top:0;
+    background-image: linear-gradient(225deg, #0e00ff, #a5d8fc);
+    position: relative;
+    color: #f4f3f7;
+    font-weight: bold;
+    font-family: 'Batang';
+    margin-bottom: 0;
+
+    }
+
+    .fobox {
+    width: 75%;
+    height: 100%;
+    position: relative;
+    align-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top:0; 
+    }
+
+    .fotxt {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    position: relative;
+    }
+
+    .fotxt > div {
+    width: 15%;
+    }
+
+    /* Tablet (max-width: 1024px) */
+    @media (max-width: 1024px) {
+    footer {
+    height: 300px;
+    font-size: 0.9em;
+    }
+
+    .fobox {
+    width: 85%;
+    }
+
+    .fotxt {
+    height: 35px;
+    }
+
+    .fotxt > div {
+    width: 20%;
+    }
+    }
+
+    /* Mobile (max-width: 768px) */
+    @media (max-width: 768px) {
+    footer {
+    height: 250px;
+    font-size: 0.8em;
+    margin-top: 0;
+    }
+
+    .fobox {
+    width: 95%;
+    margin-top: 0;
+    
+    }
+
+    .fotxt {
+    width: 45%;
+    height: 30px;
+    margin-left: 40px;
+    white-space: nowrap; 
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+    }
+    .foad{
+     font-size: 10px; 
+     margin-bottom: 70px;
+     margin-left: 40px; 
+     line-height: 2; 
+    }
+    }

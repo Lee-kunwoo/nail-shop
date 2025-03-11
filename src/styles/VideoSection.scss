@@ -1,0 +1,136 @@
+        /* 동영상과 배경 변경 */
+        #bgChange.hide {
+        opacity: 0;
+        }
+
+        #bgChange {
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+        height: auto;
+        background-color: #222231;
+        color: #eee;
+        transition: 1.5s;
+        opacity: 1;
+        margin-top: 20px;
+        }
+
+        #bgChange.on {
+        background-color: #fafafc;
+        color: rgb(255, 255, 255);
+        }
+
+        /* 텍스트 스타일 */
+        .sec4Text > p:nth-child(1) {
+        font-size: 51px;
+        font-weight: bolder;
+        margin-bottom: 20px;
+        }
+
+        .sec4Text > p:nth-child(2) {
+        margin-bottom: 20px;
+        }
+
+        .sec4Text > p:last-child {
+        margin-bottom: 50px;
+        }
+
+        .sec4Text > p:not(:first-child) {
+        font-size: 21px;
+        font-weight: 500;
+        }
+
+        /* 동영상 */
+        #movie {
+        margin: auto;
+        }
+
+        #movie video {
+        width: 900px;
+        height: 400px;
+        display: block;
+        margin: auto;
+        transition: all 2s;
+        }
+
+        #movie video.big {
+        animation: bb 3s 0.5s both;
+        }
+
+        @keyframes bb {
+        from {
+        width: 1200px;
+        height: 1000px;
+        }
+        to {
+        width: 1400px;
+        height: 1200px;
+        }
+        }
+
+        /* Tablet (max-width: 1024px) */
+        @media (max-width: 1024px) {
+        #bgChange {
+        padding: 80px;
+        margin-top: 15px;
+        }
+
+        .sec4Text > p:nth-child(1) {
+        font-size: 40px;
+        }
+
+        .sec4Text > p:not(:first-child) {
+        font-size: 18px;
+        }
+
+        #movie video {
+        width: 700px;
+        height: 350px;
+        }
+
+        /* Tablet용 애니메이션 재정의 */
+        @keyframes bb {
+        from {
+        width: 900px;
+        height: 800px;
+        }
+        to {
+        width: 1000px;
+        height: 900px;
+        }
+        }
+        }
+
+        /* Mobile (max-width: 768px) */
+        @media (max-width: 768px) {
+        #bgChange {
+        padding: 60px;
+        margin-top: 10px;
+        }
+
+        .sec4Text > p:nth-child(1) {
+        font-size: 30px;
+        }
+
+        .sec4Text > p:not(:first-child) {
+        font-size: 16px;
+        }
+
+        #movie video {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        }
+
+        /* Mobile용 애니메이션 재정의 */
+        @keyframes bb {
+        from {
+        width: 400px;
+        height: auto;
+        }
+        to {
+        width: 450px;
+        height: auto;
+        }
+        }
+        }
